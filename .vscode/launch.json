@@ -6,6 +6,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Proyek_UTS",
+            "request": "launch",
+            "mainClass": "UTS.Proyek_UTS",
+            "projectName": "JAVA_e08f9805",
+            "vmArgs": "--module-path /Users/waodedewi/Documents/javafx-sdk-26.0.1/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Koneksi",
+            "request": "launch",
+            "mainClass": "UTS.Koneksi",
+            "projectName": "JAVA_e08f9805"
+        },
+        {
+            "type": "java",
             "name": "Tugas21042026",
             "request": "launch",
             "mainClass": "TUGAS.Tugas21042026",

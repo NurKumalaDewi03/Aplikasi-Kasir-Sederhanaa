@@ -22,6 +22,7 @@
         "/Users/waodedewi/Documents/javafx-sdk-26.0.1/lib/javafx.web.jar",
         "/Users/waodedewi/Documents/javafx-sdk-26.0.1/lib/jdk.jsobject.jar",
         "/Users/waodedewi/Documents/javafx-sdk-26.0.1/lib/jfx.incubator.richtext.jar",
-        "/Users/waodedewi/Documents/javafx-sdk-26.0.1/lib/jfx.incubator.input.jar"
+        "/Users/waodedewi/Documents/javafx-sdk-26.0.1/lib/jfx.incubator.input.jar",
+        "mysql-connector-j-8.0.33.jar"
     ]
 }
