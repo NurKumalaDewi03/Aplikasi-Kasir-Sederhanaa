@@ -1,0 +1,12 @@
+# Abaikan folder build dan hasil kompilasi
+/build/
+/dist/
+*.class
+
+# Abaikan konfigurasi IDE
+.idea/
+*.iml
+.DS_Store
+
+# Abaikan folder lokal
+.gradle/

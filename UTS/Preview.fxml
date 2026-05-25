@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UTS.Preview">
+   <children>
+      <Label layoutX="34.0" layoutY="48.0" prefWidth="59.0" text="Tanggal">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="84.0" prefWidth="59.0" text="No. Nota">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="118.0" prefWidth="59.0" text="Pelanggan">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="153.0" prefWidth="59.0" text="No. HP">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="188.0" prefHeight="16.0" prefWidth="83.0" text="Jumlah Item ">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="48.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="84.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="118.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="153.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="186.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNo_Nota" editable="false" layoutX="120.0" layoutY="79.0" prefHeight="26.0" prefWidth="161.0" />
+      <TextField fx:id="txtHp_Pelanggan" editable="false" layoutX="120.0" layoutY="149.0" prefHeight="26.0" prefWidth="216.0" />
+      <TextField fx:id="txtJumlahBelanja" editable="false" layoutX="120.0" layoutY="184.0" prefHeight="26.0" prefWidth="48.0" />
+      <VBox layoutX="20.0" layoutY="226.0" prefHeight="271.0" prefWidth="737.0">
+         <children>
+            <TableView fx:id="TABEL_PREVIEW" prefHeight="207.0" prefWidth="737.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="id_barang" prefWidth="75.0" text="ID BARANG" />
+                <TableColumn fx:id="Nama_barang" prefWidth="363.0" text="NAMA BARANG" />
+                  <TableColumn fx:id="Jumlah_beli" minWidth="0.0" prefWidth="58.0" text="QTY" />
+                  <TableColumn fx:id="Harga_Satuan" prefWidth="115.0" text="HARGA SATUAN" />
+                  <TableColumn fx:id="Total" prefWidth="125.0" text="TOTAL" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="32.0" prefWidth="737.0" />
+         </children>
+      </VBox>
+      <Pane layoutX="464.0" layoutY="490.0">
+         <children>
+            <Label layoutY="5.0" prefHeight="16.0" prefWidth="83.0" text="SUB TOTAL">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="5.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtsubstotal" editable="false" layoutX="132.0" prefHeight="26.0" prefWidth="161.0" />
+            <Label layoutY="41.0" prefHeight="16.0" prefWidth="83.0" text="DISKON">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="121.0" layoutY="41.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtdiskon" editable="false" layoutX="131.0" layoutY="36.0" prefHeight="26.0" prefWidth="161.0" />
+            <Label layoutY="77.0" prefHeight="16.0" prefWidth="104.0" text="GRAND TOTAL">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="121.0" layoutY="77.0" prefHeight="16.0" prefWidth="6.0" text=":" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtgrandtotal" editable="false" layoutX="131.0" layoutY="72.0" prefHeight="26.0" prefWidth="161.0" />
+         </children>
+      </Pane>
+      <Label layoutX="288.0" layoutY="6.0" prefHeight="17.0" prefWidth="195.0" text="TS MINIMARKET">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTanggal" editable="false" layoutX="119.0" layoutY="43.0" prefHeight="26.0" prefWidth="164.0" />
+      <TextField fx:id="txtNama_Pelanggan" editable="false" layoutX="120.0" layoutY="113.0" prefHeight="26.0" prefWidth="275.0" />
+      <Button fx:id="btnClose" layoutX="21.0" layoutY="535.0" mnemonicParsing="false" onAction="#Close" text="Close" />
+   </children>
+</AnchorPane>
